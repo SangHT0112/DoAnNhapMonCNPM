@@ -16,5 +16,15 @@ namespace DoAnNhapMonCNPM.GUI
         {
             InitializeComponent();
         }
+
+        private void picLogo_Paint(object sender, PaintEventArgs e)
+        {
+                // Tạo GraphicsPath để vẽ hình tròn
+                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+                path.AddEllipse(0, 0, picLogo.Width, picLogo.Height);
+
+                // Áp dụng vùng cắt (clipping region)
+                picLogo.Region = new Region(path);
+        }
     }
 }
