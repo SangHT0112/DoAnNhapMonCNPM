@@ -16,7 +16,7 @@ namespace DoAnNhapMonCNPM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.Home());
+            Application.Run(new GUI.HocSinh());
         }
     }
 }

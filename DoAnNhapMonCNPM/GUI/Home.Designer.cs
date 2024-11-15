@@ -227,7 +227,6 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 6;
             this.picLogo.TabStop = false;
-            this.picLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.picLogo_Paint);
             // 
             // label5
             // 
@@ -264,6 +263,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

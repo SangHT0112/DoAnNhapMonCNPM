@@ -11,17 +11,20 @@ using System.Windows.Forms;
 
 namespace DoAnNhapMonCNPM.GUI
 {
-    public partial class Login : Form
+    public partial class HocSinh : Form
     {
-        public Login()
+        public HocSinh()
         {
             InitializeComponent();
         }
-        private void Login_Load(object sender, EventArgs e)
+
+        private void HocSinh_Load(object sender, EventArgs e)
         {
             //Bo Tròn Logo
             system s = new system();
             s.BoTronLogo(picLogo);
+
         }
+
     }
 }

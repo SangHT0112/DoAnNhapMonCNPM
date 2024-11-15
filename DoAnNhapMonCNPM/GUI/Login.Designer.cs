@@ -184,7 +184,6 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
-            this.picLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.picLogo_Paint);
             // 
             // panel2
             // 

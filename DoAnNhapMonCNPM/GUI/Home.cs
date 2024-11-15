@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnNhapMonCNPM.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,15 +17,11 @@ namespace DoAnNhapMonCNPM.GUI
         {
             InitializeComponent();
         }
-
-        private void picLogo_Paint(object sender, PaintEventArgs e)
+        private void Home_Load(object sender, EventArgs e)
         {
-                // Tạo GraphicsPath để vẽ hình tròn
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddEllipse(0, 0, picLogo.Width, picLogo.Height);
-
-                // Áp dụng vùng cắt (clipping region)
-                picLogo.Region = new Region(path);
+            //Bo Tròn Logo
+            system system = new system();
+            system.BoTronLogo(picLogo);
         }
     }
 }
