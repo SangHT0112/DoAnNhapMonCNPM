@@ -53,7 +53,9 @@
     <Compile Include="DAO\QLHocSinh.cs" />
     <Compile Include="DAO\QLLop.cs" />
     <Compile Include="DAO\system.cs" />
+    <Compile Include="DTO\GiaoVien.cs" />
     <Compile Include="DTO\HocSinh.cs" />
+    <Compile Include="DTO\Lop.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
