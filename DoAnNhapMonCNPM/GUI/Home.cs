@@ -42,7 +42,7 @@ namespace DoAnNhapMonCNPM.GUI
 
         private void btnQLHS_Click(object sender, EventArgs e)
         {
-            GUI.HocSinh guiHS = new GUI.HocSinh();
+            GUI.HocSinh guiHS = new GUI.HocSinh(txtAccount.Text);
             this.Hide();
             guiHS.ShowDialog();
             this.Show();

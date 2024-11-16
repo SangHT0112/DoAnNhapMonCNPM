@@ -31,12 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HocSinh));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbAccount = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -96,16 +97,28 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(24)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.lbAccount);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.picLogo);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnDangXuat);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(993, 93);
             this.panel1.TabIndex = 5;
+            // 
+            // lbAccount
+            // 
+            this.lbAccount.AutoSize = true;
+            this.lbAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccount.ForeColor = System.Drawing.Color.Red;
+            this.lbAccount.Location = new System.Drawing.Point(829, 26);
+            this.lbAccount.Name = "lbAccount";
+            this.lbAccount.Size = new System.Drawing.Size(51, 20);
+            this.lbAccount.TabIndex = 10;
+            this.lbAccount.Text = "None";
             // 
             // label14
             // 
@@ -162,17 +175,17 @@
             this.picLogo.TabIndex = 6;
             this.picLogo.TabStop = false;
             // 
-            // button5
+            // btnDangXuat
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(166)))));
-            this.button5.Location = new System.Drawing.Point(841, 61);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(99, 26);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Đăng Xuất";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(166)))));
+            this.btnDangXuat.Location = new System.Drawing.Point(841, 61);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(99, 26);
+            this.btnDangXuat.TabIndex = 1;
+            this.btnDangXuat.Text = "Đăng Xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
@@ -215,6 +228,7 @@
             this.label1.Size = new System.Drawing.Size(78, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "MENU";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -714,7 +728,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picLogo;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
@@ -763,5 +777,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cboGT;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lbAccount;
     }
 }

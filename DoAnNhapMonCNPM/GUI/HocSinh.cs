@@ -14,9 +14,12 @@ namespace DoAnNhapMonCNPM.GUI
     public partial class HocSinh : Form
     {
 
-        public HocSinh()
+        private string _username;
+
+        public HocSinh(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         void HienThiComboBoxKhoi()
@@ -81,6 +84,8 @@ namespace DoAnNhapMonCNPM.GUI
             //Bo Tròn Logo
             system s = new system();
             s.BoTronLogo(picLogo);
+            lbAccount.Text = _username;
+
 
             HienThiComboBoxKhoi();
             HienThiComboBoxLop();
@@ -117,6 +122,11 @@ namespace DoAnNhapMonCNPM.GUI
             cboGT.Text = lvDS.SelectedItems[0].SubItems[3].Text;
             txtDiaChi.Text = lvDS.SelectedItems[0].SubItems[4].Text;
             txtSDT.Text = lvDS.SelectedItems[0].SubItems[5].Text;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
