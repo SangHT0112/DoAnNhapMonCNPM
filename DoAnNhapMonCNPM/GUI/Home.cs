@@ -47,5 +47,13 @@ namespace DoAnNhapMonCNPM.GUI
             guiHS.ShowDialog();
             this.Show();
         }
-    }
+
+          private void btnQLGV_Click(object sender, EventArgs e)
+          {
+               GUI.frmGiaoVien guiHS = new GUI.frmGiaoVien(txtAccount.Text);
+               this.Hide();
+               guiHS.ShowDialog();
+               this.Show();
+          }
+     }
 }

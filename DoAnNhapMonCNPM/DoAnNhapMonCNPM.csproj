@@ -67,6 +67,12 @@
     <Compile Include="GUI\DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmGiaoVien.Designer.cs">
+      <DependentUpon>frmGiaoVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\HocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmGiaoVien.resx">
+      <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HocSinh.resx">
       <DependentUpon>HocSinh.cs</DependentUpon>

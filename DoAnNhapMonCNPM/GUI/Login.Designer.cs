@@ -35,20 +35,20 @@
                this.btnDN = new System.Windows.Forms.Button();
                this.label2 = new System.Windows.Forms.Label();
                this.label1 = new System.Windows.Forms.Label();
-               this.pictureBox3 = new System.Windows.Forms.PictureBox();
-               this.pictureBox2 = new System.Windows.Forms.PictureBox();
                this.txtMK = new System.Windows.Forms.TextBox();
                this.txtTK = new System.Windows.Forms.TextBox();
                this.panel1 = new System.Windows.Forms.Panel();
                this.label5 = new System.Windows.Forms.Label();
                this.label4 = new System.Windows.Forms.Label();
                this.picLogo = new System.Windows.Forms.PictureBox();
+               this.pictureBox3 = new System.Windows.Forms.PictureBox();
+               this.pictureBox2 = new System.Windows.Forms.PictureBox();
                this.groupBox1.SuspendLayout();
                this.panel2.SuspendLayout();
-               ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-               ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
                this.panel1.SuspendLayout();
                ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+               ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+               ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
                this.SuspendLayout();
                // 
                // groupBox1
@@ -111,7 +111,7 @@
                this.btnDN.ForeColor = System.Drawing.SystemColors.ButtonFace;
                this.btnDN.Location = new System.Drawing.Point(77, 220);
                this.btnDN.Name = "btnDN";
-               this.btnDN.Size = new System.Drawing.Size(136, 43);
+               this.btnDN.Size = new System.Drawing.Size(162, 43);
                this.btnDN.TabIndex = 3;
                this.btnDN.Text = "Đăng Nhập";
                this.btnDN.UseVisualStyleBackColor = false;
@@ -136,26 +136,6 @@
                this.label1.Size = new System.Drawing.Size(132, 29);
                this.label1.TabIndex = 2;
                this.label1.Text = "Tài Khoản";
-               // 
-               // pictureBox3
-               // 
-               this.pictureBox3.Image = global::DoAnNhapMonCNPM.Properties.Resources.R;
-               this.pictureBox3.Location = new System.Drawing.Point(417, 156);
-               this.pictureBox3.Name = "pictureBox3";
-               this.pictureBox3.Size = new System.Drawing.Size(48, 37);
-               this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-               this.pictureBox3.TabIndex = 1;
-               this.pictureBox3.TabStop = false;
-               // 
-               // pictureBox2
-               // 
-               this.pictureBox2.Image = global::DoAnNhapMonCNPM.Properties.Resources.user_icon_1024x1024_dtzturco;
-               this.pictureBox2.Location = new System.Drawing.Point(417, 95);
-               this.pictureBox2.Name = "pictureBox2";
-               this.pictureBox2.Size = new System.Drawing.Size(48, 37);
-               this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-               this.pictureBox2.TabIndex = 1;
-               this.pictureBox2.TabStop = false;
                // 
                // txtMK
                // 
@@ -219,11 +199,31 @@
                this.picLogo.TabIndex = 0;
                this.picLogo.TabStop = false;
                // 
+               // pictureBox3
+               // 
+               this.pictureBox3.Image = global::DoAnNhapMonCNPM.Properties.Resources.R;
+               this.pictureBox3.Location = new System.Drawing.Point(417, 156);
+               this.pictureBox3.Name = "pictureBox3";
+               this.pictureBox3.Size = new System.Drawing.Size(48, 37);
+               this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+               this.pictureBox3.TabIndex = 1;
+               this.pictureBox3.TabStop = false;
+               // 
+               // pictureBox2
+               // 
+               this.pictureBox2.Image = global::DoAnNhapMonCNPM.Properties.Resources.user_icon_1024x1024_dtzturco;
+               this.pictureBox2.Location = new System.Drawing.Point(417, 95);
+               this.pictureBox2.Name = "pictureBox2";
+               this.pictureBox2.Size = new System.Drawing.Size(48, 37);
+               this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+               this.pictureBox2.TabIndex = 1;
+               this.pictureBox2.TabStop = false;
+               // 
                // Login
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-               this.ClientSize = new System.Drawing.Size(1062, 597);
+               this.ClientSize = new System.Drawing.Size(997, 597);
                this.Controls.Add(this.panel1);
                this.Controls.Add(this.groupBox1);
                this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,11 +236,11 @@
                this.groupBox1.PerformLayout();
                this.panel2.ResumeLayout(false);
                this.panel2.PerformLayout();
-               ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-               ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
                this.panel1.ResumeLayout(false);
                this.panel1.PerformLayout();
                ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+               ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+               ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
                this.ResumeLayout(false);
 
         }

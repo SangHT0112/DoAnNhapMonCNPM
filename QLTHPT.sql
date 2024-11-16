@@ -67,7 +67,7 @@ VALUES
 ('GV13', N'Nguyễn Thị Kim Chi', '1985-07-16', 0, N'Tiền Giang', '0924567890', 'GV', 'K11'),
 ('GV14', N'Trần Huỳnh Ngọc Tưởng', '1980-03-26', 1, N'Tiền Giang', '0925678901', 'GV', 'K12'),
 ('GV15', N'Trần Huỳnh Trang', '1976-09-16', 0, N'Tiền Giang', '0926789012', 'GV', 'K12');
-
+select * from GIAOVIEN
 -- B?ng LOP thêm Niên khóa (NamHoc)
 CREATE TABLE LOP (
     MaLop CHAR(10) PRIMARY KEY,
@@ -422,7 +422,7 @@ CREATE TABLE MON (
     MaKhoi CHAR(10),
     CONSTRAINT FK_mon_khoi FOREIGN KEY (MaKhoi) REFERENCES KHOI(MaKhoi)
 );
-
+select * from NGUOIDUNG
 -- Các môn học phổ biến tại THPT
 INSERT INTO MON (MaMon, TenMon, MaKhoi)
 VALUES
