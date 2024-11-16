@@ -16,7 +16,7 @@ namespace DoAnNhapMonCNPM.DAO
         {
             try
             {
-                string sqlcon = @"Data Source=HTS_SINHVIENIT\SQLEXPRESS;Initial Catalog=QLHSTH;Integrated Security=True;";
+                string sqlcon = @"Data Source=HTS_SINHVIENIT\SQLEXPRESS;Initial Catalog=QLTHPT;Integrated Security=True;";
                 cnn.ConnectionString = sqlcon;
                 if (cnn.State == ConnectionState.Closed)
                     cnn.Open();
